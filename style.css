@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    /* justify-content: center; */
+    text-align: center;
+    /* display: inline; */
+    background-color: aqua;
+    margin: 40px;
+}
+.new-Book {
+display: flex;
+flex-direction: column;
+background-color: blue;
+text-align: center;
+flex-wrap: nowrap;
+justify-content: right;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+button {
+    margin: auto auto;
+    height: 40px;
+    width: 100px;
+    background-color: aqua;
+    font-size: 17px;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.list-head{
+    margin: 12px auto auto auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.book-list{
+    /* justify-content: left; */
+display: flex;
+/* justify-content: center; */
+/* grid-template-rows: 1fr 1fr; */
+flex-direction: column;
+align-items: center;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.booklist{
+    background-color: rgb(253, 252, 252);
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 1px 0px;
+    padding: 5px 00 00 10px;
+    font-weight: 550;
+    width: 20vw;
+    justify-content: center;
+}
+.main-page-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-column: auto; */
+    background-color: pink;
+}
+input {
+    width: 300px;
+    height: 42px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 100px;
+    padding-left: 10px;
+}
