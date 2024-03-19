@@ -4,21 +4,15 @@ class MakeBook {
     this.Author = Author;
     this.Pages = Pages;
   }
-}
-
-function addBook(event) {
-  event.preventDefault(); // Prevent default form submission
+  set addBook(event){
+    event.preventDefault();  
   let bookName = document.getElementById("bookName").value;
   let bookAuthor = document.getElementById("bookAuthor").value;
   let bookPages = document.getElementById("bookPages").value;
-  
-  if (!bookName || !bookAuthor || !bookPages) {
-    alert("Please fill in all book details.");
-    return; // Stop execution if book details are incomplete
-  }
-  const book = new MakeBook(bookName, bookAuthor, bookPages);
+  const book = new MakeBook(bookName, bookAuthor, bookPages);  
   console.log(book);
   list(book);
+  }
 }
 
 const listContainer = document.getElementById("list-container");
